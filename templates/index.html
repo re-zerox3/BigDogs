@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/style.css" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            {% if isLoggedIn %}
+            <li><a href='/'>Welcome</a></li>
+            <li><a href='/dog_map'>Dog Map!</a></li>
+            <li><a href='/view_all'>View All</a></li>
+            <li><a href='/update'>Update Password</a></li>
+            <li><a href='/logout'>LOGOUT</a></li>
+            {% endif %}
+            {% if not isLoggedIn %}
+            <li><a href='/'>Welcome</a></li>
+            <li><a href='/create'>Sign Up</a></li>
+            <li><a href='/login'>Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+<h3>{% block header %}{% endblock %}</h3>    
+{% block content %}
+<h1>Welcome To Pet Tracker Web App</h1>
+<p>Initiate Thyself With "Sign Up" and become approved...</p>
+<h2>OR</h2>
+<p>Declare Your Previously Known Presence With "Login"</p>
+{% endblock %}
+</body>
+
+</html>
