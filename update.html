@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block title %}Update{% endblock %}
+{% block header %}{{ alert }}{% endblock %}
+{% block content %}
+<h1>Update User</h1>
+<form action="/update" method="POST">
+    <label for="oldPassword">Old Password</label><br>
+    <input type="password" name="oldPassword" required><br>
+    <label for="newPassword">New Password</label><br>
+    <input type="password" name="newPassword" required><br>
+    <input type="submit" value="Update Password">
+</form>
+{% endblock %}
