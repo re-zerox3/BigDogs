@@ -3,13 +3,13 @@
   "builds": [
       {
           "src": "*.py",
-          "use": "@liudonghua123/now-flask"
+          "use": "@re-zerox3/BigDogs"
       }
   ],
   "routes": [
       {
           "src": "(.*)",
-          "dest": "app.py"
+          "dest": "code.py"
       }
   ]
 }
