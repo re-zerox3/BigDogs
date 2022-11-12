@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+h1 {
+    font-style: italic;
+    font-weight: bolder;
+    color: red;
+    font-size: 2.5em;
+}
+h3 {
+    color:lime
+}
+label {
+    font-style: italic;
+    font-weight: bolder;
+    color: lightskyblue;
+    font-size: 2.5em;
+}
+p {
+    color: green;
+    font-size: 1.5em;
+}
+li {
+    font-size: 2em;
+    display: inline;
+    list-style-type: none;
+    text-align: 100%;
+}
+li#marcList {
+    list-style-type: disc;
+    display: list-item;
+    list-style-position: inside;
+}
+a:link {
+    color: green;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: hotpink;
+}
+table, td {
+    background-color: lightskyblue;
+    border-style: dashed;
+    border-color:blue;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    padding: .33em;
+}
+#marc {
+    color: midnightblue;
+    font-weight: bolder;
+}
