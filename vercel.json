@@ -3,7 +3,7 @@
   "builds": [
       {
           "src": "*.py",
-          "use": "@re-zerox3/BigDogs"
+          "use": "vercel/python"
       }
   ],
   "routes": [
